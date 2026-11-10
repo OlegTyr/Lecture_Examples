@@ -22,7 +22,7 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Сборка LogHub с warnings-as-errors
-        run: dotnet build LogHub/LogHub.sln -warnaserror --configuration Release
+        run: dotnet build LogHub/LogHub.slnx -warnaserror --configuration Release
 
       - name: Тесты LogHub
-        run: dotnet test LogHub/LogHub.sln --no-build --configuration Release --verbosity normal
+        run: dotnet test LogHub/LogHub.slnx --no-build --configuration Release --verbosity normal
